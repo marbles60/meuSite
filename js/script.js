@@ -36,13 +36,19 @@ function tabuada(){
     }
 }
 
-// function soma(){
-//     const valorA = document.querySelector('#valorA').value;
-//     const valorB = document.querySelector('#valorB').value;
-//     const resulSoma = document.querySelector('#respostaSoma')
+function soma(){
+     const valorA = Number(document.querySelector('#valorA').value);
+     const valorB = Number(document.querySelector('#valorB').value);
+     const resulSoma = document.querySelector('#respostaSoma');
 
+    if (valorA != '' && valorB != ''){
 
-// }
+     resulSoma.innerHTML = `${valorA} + ${valorB} = ${valorA+valorB}`
+
+    }else{
+        resulSoma.textContent = 'Digite um valor, zé ruela!'
+    }
+}
 
 function alterarCor(){
     const cor = document.querySelector('#cor').value
@@ -65,7 +71,7 @@ if (tema == 'Claro'){
 
     for (let item of container){
         item.style.backgroundColor = '#ff0099';
-        item.style.color = '#fd9cff';
+        item.style.color = '#97134B';
     }
     
     
@@ -76,10 +82,16 @@ if (tema == 'Claro'){
         item.style.backgroundColor = '#97134B';
         item.style.color = '#fd9cff';
     }
-}else{
+}else if(tema == 'Original'){
+    body.style.backgroundColor = 'rgb(158, 3, 137)'
+
+    for (let item of container){
+        item.style.backgroundColor = '#97134B';
+        item.style.color = '#fd9cff';
+}
+}
 }
 
-}
 
 function alterarImg(){
 

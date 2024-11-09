@@ -9,8 +9,8 @@
 }
 
 body{
-    background-color: rgb(255, 0, 221)/*rgb(210, 105, 30)*/;
-    transition: all 1s ease;
+    background-color: rgb(158, 3, 137)/*rgb(210, 105, 30)*/;
+    transition: all 2s ease;
 }
 
 main{ 
@@ -23,12 +23,12 @@ main{
 }
 
 .container{ 
-    background-color:#ff0099; 
+    background-color:#97134B; 
     color: #fd9cff;
     padding: 20px;
     margin: 20px 0;
     box-shadow: 5px 5px 5px rgba(0,0,0,.3);
-    transition: all 1s ease;
+    transition: all 2s ease;
 
     
 
@@ -36,7 +36,7 @@ main{
 
 .content{
     padding: 30px;
-    border: 3px dashed rgba(210,105,30,.5);
+    border: 3px dashed rgb(99, 5, 86);
     text-align: center;
 }
 
